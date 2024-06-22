@@ -22,20 +22,20 @@ const WeatherInfo = (props) => {
       <div>
         <h1 className="text-white font-bold text-[2.75rem] text-center">{`${WeatherData.current.temp_c} °C`}</h1>
       </div>
-      <div className="flex flex-wrap items-center gap-x-[20px] w-[150%] mt-2">
-        <div className="max-w-[300px] w-[30%] p-[1rem] bg-color-light3 rounded-md flex flex-col gap-[5px] items-center">
+      <div className="flex flex-col justify-between items-center gap-x-[20px] w-[150%] sm:flex-row">
+        <div className="min-w-[200px] m-3 max-w-[300px] w-[30%] p-[1rem] bg-color-light3 rounded-md flex flex-col gap-[5px] items-center sm:min-w-[100px]">
           <img src={wind} className="h-[90px] w-[90px]"/>
           <p className="text-white font-mullish font-bold uppercase text-[1.15rem]">Windspeed</p>
           <p className="text-white font-mullish font-semibold text-[1.5rem]">{`${WeatherData.current.wind_kph} km/h`}</p>
         </div>
 
-        <div className="max-w-[300px] w-[30%] p-[1rem] bg-color-light3 rounded-md flex flex-col gap-[5px] items-center">
+        <div className="min-w-[200px] m-3 max-w-[300px] w-[30%] p-[1rem] bg-color-light3 rounded-md flex flex-col gap-[5px] items-center sm:min-w-[100px]">
           <img src={humidity} className="h-[90px] w-[90px]"/>
           <p className="text-white font-mullish font-bold uppercase text-[1.15rem]">Humidity</p>
           <p className="text-white font-mullish font-semibold text-[1.5rem]">{`${WeatherData.current.humidity}%`}</p>
         </div>
 
-        <div  className="max-w-[300px] w-[30%] p-[1rem] bg-color-light3 rounded-md flex flex-col gap-[5px] items-center">
+        <div  className="min-w-[200px] m-3 max-w-[300px] w-[30%] p-[1rem] bg-color-light3 rounded-md flex flex-col gap-[5px] items-center sm:min-w-[100px]">
           <img src={cloud}  className="h-[90px] w-[90px]"/>
           <p  className="text-white font-mullish font-bold uppercase text-[1.15rem]">Clouds</p>
           <p  className="text-white font-mullish font-semibold text-[1.5rem]">{`${WeatherData.current.cloud}%`}</p>

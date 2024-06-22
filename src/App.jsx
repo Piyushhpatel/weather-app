@@ -9,9 +9,9 @@ const App = () => {
   return (
     <div className="flex flex-col items-center min-h-[100vh] bg-gradient-to-r from-blue-900 to-blue-600">
       <Navbar/>
-      <div className="flex flex-wrap justify-between w-[500px]">
-        <NavLink to="/" className="navlink text-white text-[14px] font-semibold px-[8px] py-[5px] rounded-md">Your Weather</NavLink>
-        <NavLink to="/search" className="navlink text-white text-[14px] font-semibold px-[8px] py-[5px] rounded-md">Search Weather</NavLink>
+      <div className="flex flex-wrap justify-between max-w-[500px] w-[100%] items-center">
+        <NavLink to="/" className="navlink text-white text-[14px] font-semibold px-[8px] py-[5px] rounded-md m-2">Your Weather</NavLink>
+        <NavLink to="/search" className="navlink text-white text-[14px] font-semibold px-[8px] py-[5px] rounded-md m-2">Search Weather</NavLink>
       </div>
 
       <Routes>

@@ -40,8 +40,8 @@ const SearchPage = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center w-11/12 p-5">
-      <form onSubmit={submitHandler} className="flex justify-center items-centers max-w-[500px] w-[190%] h-40px p-4 gap-2">
+    <div className="flex flex-col justify-center items-center max-w-[500px] w-[100%] p-5">
+      <form onSubmit={submitHandler} className="flex justify-center items-centers max-w-[500px] w-[100%] h-40px p-4 gap-2">
         <input 
           type="text" 
           placeholder="Search for city" 

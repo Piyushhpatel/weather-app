@@ -10,8 +10,8 @@ const GrantAccess = (props) => {
         <img src={location} className="w-[80px] aspect-square mt-[50px]"/>
       </div>
       <div>
-        <h3 className="font-mulish uppercase text-white font-bold text-2xl text-center mt-5 leading-[3rem]">Grant Location Access</h3>
-        <p className="font-mulish font-semibold text-md text-white">Allow access to get weather information</p>
+        <h3 className="font-mulish uppercase text-white font-bold text-xl text-center mt-5 leading-[3rem] sm:text-2xl">Grant Location Access</h3>
+        <p className="font-mulish font-semibold text-md text-white text-center">Allow access to get weather information</p>
       </div>
       <button 
         onClick={getLocation}
