@@ -16,7 +16,7 @@ const SearchPage = () => {
   async function fetchData(){
     setLoading(true);
     const api_key = process.env.API_KEY;
-    const uri = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}&aqi=no`;
+    const uri = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}&aqi=no`;
 
     try{
       const response  = await fetch(uri);

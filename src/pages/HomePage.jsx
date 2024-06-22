@@ -28,7 +28,7 @@ const HomePage = () => {
   async function fetchData() {
     setLoading(true);
     const api_key = process.env.API_KEY; // Assuming you're using create-react-app and .env files
-    const uri = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${coordinates.lat},${coordinates.lon}&aqi=no`;
+    const uri = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${coordinates.lat},${coordinates.lon}&aqi=no`;
     try {
       const response = await fetch(uri);
       const data = await response.json();
