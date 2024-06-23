@@ -1,5 +1,3 @@
-import { TbDeviceGamepad } from "react-icons/tb"
-
 const Codes = {
     "afghanistan": "AF",
     "albania": "AL",
